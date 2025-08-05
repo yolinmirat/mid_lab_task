@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Delivery Service</title>
+  <style>
+    /* === Header Styling === */
+    header {
+      color: #1a73e8;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* === Paragraph Styling === */
+    .color2,
+    #color3 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    .color2 {
+      color: #34a853;
+    }
+
+    #color3 {
+      color: #ea4335;
+    }
+
+    /* === Span Styling === */
+    span.color2 {
+      display: block;
+      margin: 15px 0;
+    }
+
+    /* === List Border Styling === */
+    #border1 {
+      border: 2px solid #1a73e8;
+      padding: 10px;
+      width: 250px;
+      margin: 0 auto 20px auto;
+      list-style-position: inside;
+    }
+
+    #border1 li {
+      margin-bottom: 5px;
+    }
+
+    /* === Centered Button Box === */
+    #divButtonBox {
+      background-color: #e0f7fa;
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      border: 2px dashed #1a73e8;
+      border-radius: 10px;
+    }
+
+    #divButtonBox a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    #divButtonBox a.order {
+      background-color: #1a73e8;
+    }
+
+    #divButtonBox a.track {
+      background-color: #34a853;
+    }
+
+    /* === Stacked Fixed Divs with Z-Index === */
+    #div1,
+    #div2,
+    #div3 {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      top: 40%;
+      border-radius: 8px;
+    }
+
+    #div1 {
+      background-color: red;
+      right: 100px;
+      z-index: 1;
+    }
+
+    #div2 {
+      background-color: green;
+      right: 90px;
+      top: 42%;
+      z-index: 2;
+    }
+
+    #div3 {
+      background-color: blue;
+      right: 80px;
+      top: 44%;
+      z-index: 3;
+    }
+
+    /* === Scrollable Paragraph Container === */
+    #divForLongParagraph {
+      margin: 0 auto;
+      width: 300px;
+      height: 150px;
+      overflow: auto;
+      border: 1px solid black;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Welcome to Fast Home Delivery</header>
+
+  <p class="color2">We deliver food to your door in 30 minutes.</p>
+  <p class="color2">Track your order in real-time using our mobile app.</p>
+  <p id="color3">Pay with cash, card, or mobile wallet — your choice!</p>
+
+  <span class="color2">Your comfort is our priority</span>
+
+  <ul id="border1">
+    <li>Fast Food Delivery</li>
+    <li>Grocery Delivery</li>
+    <li>Parcel Drop Service</li>
+    <li>Medicine Delivery</li>
+    <li>24/7 Support</li>
+  </ul>
+
+  <!-- Button Box Centered -->
+  <div id="divButtonBox">
+    <a href="https://www.facebook.com"  class="order">Order Now</a>
+    <a href="https://www.example.com/track"  class="track">Track Your Order</a>
+  </div>
+
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <div id="div3"></div>
+
+  <div id="divForLongParagraph">
+    Our delivery service covers the entire city and operates 7 days a week, including holidays.
+    We ensure all hygiene protocols are followed. Orders may be delayed in extreme weather
+    conditions. All items are packed with care and delivered by trained staff.
+    Thank you for choosing Fast Home Delivery.
+  </div>
+
+</body>
+</html>
