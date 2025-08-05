@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show/Hide Image</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    img {
+      display: none; /* Hidden by default */
+      outline: 4px solid #333;
+      outline-offset: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Show and Hide Image</h2>
+
+  <button onclick="showImage()">Show Image</button>
+  <button onclick="hideImage()">Hide Image</button>
+
+  <br><br>
+
+  <img id="myImage" src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Sample Image">
+
+  <script>
+    function showImage() {
+      document.getElementById("myImage").style.display = "inline";
+    }
+
+    function hideImage() {
+      document.getElementById("myImage").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

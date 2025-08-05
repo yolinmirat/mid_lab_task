@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-box">
+    <h3>Registration Form</h3>
+
+    <form id="myForm">
+      <label>Full Name:</label>
+      <input type="text" id="name">
+      <div class="error" id="nameError"></div>
+
+      <label>Email:</label>
+      <input type="text" id="email">
+      <div class="error" id="emailError"></div>
+
+      <label>Age:</label>
+      <input type="number" id="age">
+      <div class="error" id="ageError"></div>
+
+      <label>Course:</label>
+      <select id="course">
+        <option value="">Select Course</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
