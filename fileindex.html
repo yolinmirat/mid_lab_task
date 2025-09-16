@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with File Upload</title>
+</head>
+<body>
+  <h2>Form with File Upload</h2>
+  <form method="post" action="fileprocess.php" enctype="multipart/form-data">
+    
+    <label for="name">Name:</label><br>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" name="email" required>
+    <br><br>
+
+    <label for="website">Website:</label><br>
+    <input type="text" name="website">
+    <br><br>
+
+    <label for="comment">Comment:</label><br>
+    <textarea name="comment" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Other">Other
+    <br><br>
+
+    <label for="file">Upload PDF File:</label><br>
+    <input type="file" name="file" accept="application/pdf" required>
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

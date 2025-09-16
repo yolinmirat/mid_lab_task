@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation Example</title>
+</head>
+<body>
+  <h2>PHP Form Validation Example</h2>
+  <form method="post" action="process.php">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" name="email" required>
+    <br><br>
+
+    <label for="website">Website:</label>
+    <input type="text" name="website">
+    <br><br>
+
+    <label for="comment">Comment:</label><br>
+    <textarea name="comment" rows="5" cols="40"></textarea>
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Other">Other
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
